@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carl Mastny</title>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="Styles/main.css">
+	<link rel="icon" href="Images/My_Logos/Personal_Logo_No_Text.svg">
+	<meta name="viewport" content="width=device-width">
+	<!-- Boootstrap stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Font Awesome for Linked In Logo -->
+	<script src="https://use.fontawesome.com/04401cdeec.js"></script>
+	<!-- form control taken from https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how -->
+</head>
+<body class="body">
+	<div class="row" id="top">
+		<div class="col-md-8 align-self-center">
+			<img id="main-logo" src="Images/Personal_Logo.svg" alt="Personal_Logo">
+		</div>
+
+		<div class="col-md-4 align-self-center">
+			<div class="nav">
+				<div class="nav-item" id="about">
+					<a href="#about-section"><img src="Images/Icons/about.svg" alt="about">about</a>
+				</div>
+				<div class="nav-item" id="resume">
+					<a href="#resume-section"><img src="Images/Icons/resume.svg" alt="about">resume</a>
+				</div>
+				<div class="nav-item">
+					<a href="#projects-section"><img src="Images/Icons/projects.svg" alt="projects">projects</a>
+				</div>
+				<div class="nav-item">
+					<a href="#contact-section"><img src="Images/Icons/contact.svg" alt="contact">contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="about-section">
+		<div class="row" id="about-row">
+			<div class="col-md-7 align-self-center">
+				<h1><img src="Images/Icons/about.svg" alt="about">A LIL ABOUT ME</h1>
+				<p>
+					Hello! My name is Carl Mastny and I am a Software Development graduate specializing in Java/C++ development. After studying programming for about a year, I have decided that coding fits my personality nicely. I love thinking outside the box and innovating new solutions. That personality trait mixed with help from family and friends has helped me to overcome many obstacles not only in programming, but also in life. Ultimately, after hours of study, work, and lack of sleep, I acquired a degree in Programming, graduating with a 4.0 GPA. Now, with degree in hand, twinkle in eye, and vigor in heart, I am ready to start my development journey!
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4 align-self-center">
+				<img src="Images/Headshot.jpg" id="headshot" alt="my-headshot">
+			</div>
+		</div>
+	</div>
+
+	<div id="resume-section">
+		<div class="row" id="resume-row">
+			<div class="col-md-4 align-self-center text-center">
+				<img src="Images/Icons/resume.svg" id="resume-section-icon" alt="resume_icon">
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-7 align-self-center">
+				<p id="download-prompt">Please, go ahead, take a look at
+				<a href="https://drive.google.com/file/d/1BPB059fqgf6chjLoMSMCLb2egudPOo3t/view" id="resume-link" target="_blank">my resume</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="projects-section">
+		<div class="row h-100" id="projects-row">
+			<div class="col-md-12 my-auto">
+				<h1><img src="Images/Icons/projects.svg" alt="projects_icon" id="projects-section-icon">PROJECTS</h1>
+				<div class="project-types-wrapper">
+					<div class="javascript-projects project-type">
+						<a href="https://codepen.io/smileytheface" target="_blank"><p>JavaScript: <br><img src="Images/CodePen.png" alt="CodePen_Logo" id="codepen-logo"></p></a>
+					</div>
+					<div class="logo-projects project-type">
+						<a href="logos.html"><p>Logo Designs: <br><img src="Images/My_Logos/ZTM_Diamond_Logo.svg" alt="ZTM_Logo" id="ztm-logo-projects"></p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact-section">
+		<div class="row h-100">
+			<div class="col-md-6 align-self-center">
+				<img src="Images/Icons/contact.svg" alt="Contact_Icon" class="contact-section-icon"><a href="tel:7085394375">(708) 539-4375</a>
+				<br><br>
+				<img src="Images/Icons/email.svg" alt="Email_Icon" class="contact-section-icon"><a href="mailto:camastny99@gmail.com">camastny99@gmail.com</a>
+				<br><br>
+				<img src="Images/Icons/linkedin.svg" alt="LinkedIn_Icon" class="contact-section-icon" id="linkedin-icon">
+				<a href="https://www.linkedin.com/in/carl-a-mastny/" target="_blank">linkedin profile</a>
+			</div>
+			<div class="col-md-6 align-self-center">
+				<h1 class="text-right">Curious? Inquire!</h1>
+				<br>
+				<form class="gform needs-validation" method="POST"
+				action="https://script.google.com/macros/s/AKfycbwmP8u99jbLyu4Iy43cbh47c_kYpUrkScOpmrBDy8w3OhM35AY/exec">
+					<div class="form-group">
+						<input type="text" class="form-control text-right" placeholder="Name" name="name" id="name" required>
+						<div class="invalid-feedback">
+							please insert a name
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control text-right" placeholder="Email" name="email" id="email" required>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control text-right" rows="5" placeholder="Comments" name="message" id="message" required></textarea>
+					</div>
+					<div class="form-group">
+						<input id="honeypot" type="text" name="honeypot" value="" />
+					</div>
+
+					<button class="btn float-right">
+						<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send
+					</button>
+					<div class="thankyou_message" style="display:none">
+						<p id="thankyou-message">Thanks for reaching out! I'll get back to you soon!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Submit the Form to Google Using "AJAX" -->
+	<!-- taken from https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how -->
+	<script data-cfasync="false" type="text/javascript" src="Scripts/form-submission-handler.js"></script>
+	<script type="text/javascript" src="Scripts/validation.js"></script>
+</body>
+<!-- My own script -->
+<script src="Scripts/main.js"></script>
+<!--Script for scrolling-->
+<!--taken from URL: https://css-tricks.com/snippets/jquery/smooth-scrolling/-->
+<!--author: Chris Coyier-->
+<script src="Scripts/scroll.js"></script>
+</html>

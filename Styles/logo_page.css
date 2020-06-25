@@ -1,0 +1,90 @@
+/*
+Top Header
+*/
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#personal-logo-no-text {
+  height: 75px;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+.name a, .name a:hover, .name a:focus, .name a:active {
+  text-decoration: none;
+  color: inherit;
+ }
+
+hr {
+  width: 85%;
+  background-color: #C3C3C3;
+  border-width: 0;
+  color: #C3C3C3;
+  height: 2px;
+  line-height: 0;
+}
+
+/*
+Main info after header
+*/
+
+#logos-text {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 55px;
+}
+
+#image-grid-row {
+  margin-top: 85px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-grid .row:last-of-type {
+  margin-bottom: 100px;
+}
+
+.grid-img {
+  height: 175px;
+  transition: opacity .4s;
+}
+
+/*
+Modal stuff
+*/
+
+#modal-wrapper {
+  max-width: 750px;
+}
+
+.modal-img {
+  height: 200px;
+}
+
+.modal-content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#BB-modal-content {
+  background-color: #FFF;
+  color: #000;
+}
+
+#BB-x {
+  color: #000;
+  text-shadow: none;
+}

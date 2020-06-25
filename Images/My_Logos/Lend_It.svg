@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="57.627449mm"
+   height="12.269719mm"
+   viewBox="0 0 57.627449 12.269719"
+   version="1.1"
+   id="svg919"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Lend_It.svg">
+  <defs
+     id="defs913" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="126.66116"
+     inkscape:cy="18.646132"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(43.932769,-91.293711)">
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.05798053;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m -34.924152,93.658412 c -2.079037,-1.20034 -4.719126,-0.49285 -5.919458,1.58619 l -2.369063,4.10334 3.958851,2.285638 4.532395,-7.850328 c -0.06615,-0.043 -0.133514,-0.0849 -0.202725,-0.12484 z"
+       id="rect815"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.03585706;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       inkscape:transform-center-x="-0.5182076"
+       d="m -43.007254,103.56343 -0.925515,-5.193268 5.885776,3.398168 z"
+       id="path823"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:transform-center-y="-4.579773e-006" />
+    <g
+       id="g836"
+       transform="matrix(-0.18866293,-0.10892459,0.10892459,-0.18866293,-25.60571,134.48083)">
+      <path
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26614991;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         d="m 125.72463,103.82317 c -11.01985,0 -19.8913,8.87197 -19.8913,19.89181 v 21.74958 h 20.98373 v -41.61039 c -0.36185,-0.0194 -0.72557,-0.031 -1.09243,-0.031 z"
+         id="path830"
+         inkscape:connector-curvature="0" />
+      <path
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16459575;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         inkscape:transform-center-x="-1.8823228e-006"
+         inkscape:transform-center-y="4.5029326"
+         d="m 116.3252,161.75114 -15.59865,-18.52083 h 31.19731 z"
+         id="path832"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       aria-label="it"
+       transform="matrix(0.28453265,0,0,0.28453265,-125.4818,-53.268388)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot866">
+      <path
+         d="m 468.76953,520.67045 q -1.5625,0 -2.55859,-0.91797 -0.9961,-0.9375 -0.9961,-2.28515 0,-1.38672 0.9961,-2.26563 0.99609,-0.8789 2.55859,-0.8789 1.58203,0 2.55859,0.8789 0.9961,0.87891 0.9961,2.26563 0,1.40625 -0.9961,2.30469 -0.97656,0.89843 -2.55859,0.89843 z m 3.04688,23.16407 h -6.17188 v -20 h 6.17188 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold'"
+         id="path1490"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 489.14062,543.60014 q -1.36718,0.72266 -4.12109,0.72266 -6.52344,0 -6.52344,-6.77735 v -9.16015 h -3.24218 v -4.55078 h 3.24218 v -4.31641 l 6.15235,-1.75781 v 6.07422 h 4.49218 v 4.55078 h -4.49218 v 8.08593 q 0,3.125 2.48047,3.125 0.97656,0 2.01171,-0.5664 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold'"
+         id="path1492"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.10164261px;line-height:1.25;font-family:babas;-inkscape-font-specification:'babas Italic';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30254108"
+       x="5.1803446"
+       y="101.47514"
+       id="text886"><tspan
+         sodipodi:role="line"
+         id="tspan884"
+         x="5.1803446"
+         y="101.47514"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Leelawadee UI';-inkscape-font-specification:'Leelawadee UI Bold';stroke-width:0.30254108">LEND</tspan></text>
+  </g>
+</svg>
