@@ -148,68 +148,78 @@ end of resume section
 projects section
 */
 #projects-section {
-  height: 100vh;
   background-color: #c2d4f0;
   width: 100%;
 }
 
 #projects-row {
-  margin-right: 0;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#projects-row:first-of-type {
+  margin-top: 140px;
 }
 
 #projects-section h1 {
   text-align: center;
   font-size: 75px;
+  padding-top: 80px;
 }
 
 #projects-section-icon {
-  height: 75px;
-  padding-right: 20px;
+  height: 100px;
+  padding-right: 40px;
 }
 
-.project-types-wrapper {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
+.project-head {
+  margin-top: 30px;
+  overflow: auto;
 }
 
-.project-type {
-  display: inline-block;
-  text-align: center;
-  margin-right: 150px;
-  transition: opacity .4s;
+.project-image {
+  height: 100px;
+  float: left;
+  padding-right: 50px;
 }
 
-.project-type:hover {
-  cursor: pointer;
-}
-
-.project-type:last-of-type {
-  margin-right: 0;
-}
-
-.project-type img {
-  height: 200px;
-  padding-top: 20px;
-}
-
-.project-type p {
+.project-name {
+  font-weight: bold;
   font-size: 25px;
 }
 
-.project-type a {
-  color: #000;
+.project-name br {
+  display: block;
+  content: "";
+  margin-top: -5px;
 }
 
-.project-type a:hover {
-  text-decoration: none;
-  color: #000;
+.project-tools {
+  font-style: italic;
+  font-size: 20px;
 }
 
-.project-type a:focus {
-  text-decoration: none;
-  color: #000;
+.erect {
+  font-style: normal;
+}
+
+.project-title {
+  float: left;
+}
+
+.project-info {
+  padding-top: 30px;
+}
+
+.project-footer {
+  padding-top: 30px;
+}
+
+.project-footer img {
+  height: 60px;
+  margin-right: 50px;
+  margin-bottom: 80px;
 }
 
 /*

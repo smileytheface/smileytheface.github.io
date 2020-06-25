@@ -36,7 +36,7 @@ window.onload = function () {
 
 // hover effect
 let gridImages = document.getElementsByClassName('grid-img');
-
+  
 for (var i = 0; i < gridImages.length; i++) {
   if(gridImages[i].getAttribute('data-toggle') == "modal") {
     hoverEffect(gridImages, i);
