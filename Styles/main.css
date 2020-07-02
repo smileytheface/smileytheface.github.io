@@ -33,14 +33,14 @@ top part with nav
   font-size: 7vh;
   font-size: 3vw;
   margin-top: 7vh;
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 
 .nav-item img {
   padding-right: 30px;
   width: 70px;
   height: 10vh;
-  transition: opacity .4s;
+  transition: opacity .3s;
 }
 
 .nav-item:hover {
@@ -63,6 +63,57 @@ top part with nav
 
 /*
 end of top part with nav
+*/
+
+/*
+nav bar that sticks to the top after scrolling
+*/
+
+.fixed-nav .sticky-nav {
+  max-height: 80px;
+}
+
+
+.sticky-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: fixed;
+  width: 100vw;
+  background-color: #FFFFFF;
+  height: 70px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.sticky-nav a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 70px;
+  transition: opacity .3s;
+}
+
+.sticky-nav a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.sticky-nav img {
+  padding-right: 20px;
+  width: 40px;
+  height: 10vh;
+  transition: opacity .4s;
+}
+
+.sticky-nav a:last-child {
+  margin-right: 0;
+}
+
+/*
+end of nav bar that sticks to the top after scrolling
 */
 
 /*
