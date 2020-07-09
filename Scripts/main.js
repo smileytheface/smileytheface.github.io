@@ -7,18 +7,19 @@ const topSection = document.querySelector('#top');
 const bottomOfTop = topSection.offsetHeight;
 
 const aboutSection = document.querySelector('#about-section');
+const resumeSection = document.querySelector('#resume-section');
+const projectsSection = document.querySelector('#projects-section');
+const contactSection = document.querySelector('#contact-section');
 const aboutTop = aboutSection.offsetTop;
+const resumeTop = resumeSection.offsetTop;
+const projectsSectionTop = projectsSection.offsetTop;
+const contactSectionTop = contactSection.offsetTop;
+
 console.log(aboutTop);
 
 for (i = 0; i < navItems.length; i++) {
   hoverEffect(navItems, i);
 }
-
-
-for (i = 0; i < stickyNav.length; i++) {
-  hoverEffect(stickyNav, i);
-}
-
 
 for (i = 0; i < projectItems.length; i++) {
   hoverEffect(projectItems, i);
@@ -41,13 +42,38 @@ function hoverEffect(items, pos) {
 }
 
 function fixedNav() {
-  console.log(window.scrollY, aboutTop);
   if (window.scrollY >= aboutTop - 70) {
     document.body.style.paddingTop = nav.offsetHeight;
     document.body.classList.add('fixed-nav');
   } else {
     document.body.classList.remove('fixed-nav');
   }
+
+  if (window.scrollY >= aboutTop - 70 && window.scrollY < resumeTop - 21) {
+    for (i = 0; i < stickyNav.length; i++) {
+      if (i != 0) {
+        stickyNav[i].style.opacity = '0.3';
+      } else {
+        stickyNav[i].style.opacity = '1';
+      }
+    }
+  } else if (window.scrollY >= resumeTop - 21 && window.scrollY < projectsSectionTop - 21) {
+    for (i = 0; i < stickyNav.length; i++) {
+      if (i != 1) {
+        stickyNav[i].style.opacity = '0.3';
+      } else {
+        stickyNav[i].style.opacity = '1';
+      }
+    }
+  } else if (window.scrollY >= projectsSectionTop - 21 && window.scrollY < contactSectionTop - 21) {
+    for (i = 0; i < stickyNav.length; i++) {
+      if (i != 2) {
+        stickyNav[i].style.opacity = '0.3';
+      } else {
+        stickyNav[i].style.opacity = '1';
+      }
+    }
+  } else if (window.scrollY >= window.height)
 }
 
 window.addEventListener('scroll', fixedNav);

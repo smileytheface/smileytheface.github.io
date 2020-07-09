@@ -77,6 +77,13 @@ nav bar that sticks to the top after scrolling
   max-height: 80px;
 }
 
+.faded .sticky-nav {
+  opacity: 0.3;
+}
+
+.opaque .sticky-nav {
+  opacity: 1;
+}
 
 .sticky-nav {
   display: flex;
