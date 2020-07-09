@@ -6,10 +6,14 @@ const nav = document.getElementsByClassName('sticky-nav')[0];
 const topSection = document.querySelector('#top');
 const bottomOfTop = topSection.offsetHeight;
 
-hoverEffect(navItems, 0);
-hoverEffect(navItems, 1);
-hoverEffect(navItems, 2);
-hoverEffect(navItems, 3);
+const aboutSection = document.querySelector('#about-section');
+const aboutTop = aboutSection.offsetTop;
+console.log(aboutTop);
+
+for (i = 0; i < navItems.length; i++) {
+  hoverEffect(navItems, i);
+}
+
 
 for (i = 0; i < stickyNav.length; i++) {
   hoverEffect(stickyNav, i);
@@ -37,8 +41,8 @@ function hoverEffect(items, pos) {
 }
 
 function fixedNav() {
-  console.log(window.scrollY, bottomOfTop);
-  if (window.scrollY >= bottomOfTop - 20) {
+  console.log(window.scrollY, aboutTop);
+  if (window.scrollY >= aboutTop - 70) {
     document.body.style.paddingTop = nav.offsetHeight;
     document.body.classList.add('fixed-nav');
   } else {

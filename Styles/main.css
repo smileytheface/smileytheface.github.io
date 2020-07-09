@@ -8,6 +8,10 @@
 top part with nav
 */
 
+.smaller-top {
+  display: none;
+}
+
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -30,7 +34,7 @@ top part with nav
 }
 
 .nav-item {
-  font-size: 7vh;
+  font-size: 28px;
   font-size: 3vw;
   margin-top: 7vh;
   transition: opacity .3s;
@@ -39,7 +43,7 @@ top part with nav
 .nav-item img {
   padding-right: 30px;
   width: 70px;
-  height: 10vh;
+  height: 36px;
   transition: opacity .3s;
 }
 
@@ -182,6 +186,10 @@ resume section
   margin-right: auto;
 }
 
+.resume-section-header {
+  display: none;
+}
+
 #download-prompt {
   font-size: 40px;
 }
@@ -282,10 +290,11 @@ End of Projecs section
 Contact section
 */
 #contact-section {
-  height: 100vh;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 70px;
+  padding-top: 70px;
 }
 
 .contact-section-icon {
@@ -303,6 +312,11 @@ Contact section
   width: 70px;
 }
 
+#contact-section h1 {
+  text-align: right;
+  font-size: 32px;
+}
+
 #honeypot {
   display: none;
 }
@@ -316,13 +330,245 @@ Contact section
 }
 
 /*
+end of contact section
+*/
+
+/*
 media queries
 */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+
   /*
-  .nav {
-    background-color: green;
-  }
+  nav section
   */
+
+  #main-logo {
+    height: auto;
+  }
+
+  #nav-wrapper {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 29px;
+  }
+
+  #top {
+    display: none;
+  }
+
+  .smaller-top-wrapper {
+    position: relative;
+    height: 100vh;
+  }
+
+  .smaller-top {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+  }
+
+  .logo-section {
+    align-self: center;
+    width: 100;
+  }
+
+  .nav {
+    display: block!important;
+    width: 221px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .nav-item:first-of-type {
+    margin-top: 80px;
+  }
+
+  .nav-item {
+    margin-top: 40px;
+    font-size: 35px;
+  }
+
+  .nav-item img {
+    height: 40px;
+    padding-right: 10px;
+  }
+
+  /*
+  end of nav section
+  */
+
+  /*
+  end of nav section
+  */
+
+  #projects-section h1 {
+    font-size: 40px;
+  }
+
+  .project-head .project-image {
+    padding-bottom: 30px;
+  }
+
+  .project-footer img {
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  #projects-row:first-of-type {
+    margin-top: 40px;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .sticky-nav-text {
+    display: none;
+  }
+
+  .sticky-nav a {
+    margin-right: 50px;
+    padding: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /*
+  nav section
+  */
+  .logo-section {
+    text-align: center;
+  }
+
+  #main-logo {
+    width: 250px;
+  }
+
+  .nav {
+    width: 198px;
+  }
+
+  .nav-item:first-of-type {
+    margin-top: 40px;
+  }
+
+  .nav-item {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .nav-item img {
+    height: 32px;
+  }
+
+  /*
+  end of nav section
+  */
+
+  /*
+  about section 
+  */
+
+  #about-section h1 {
+    font-size: 22px;
+  }
+
+  #about-section h1 img {
+    height: 25px;
+    padding-right: 20px;
+  }
+  
+  #about-section p {
+    font-size: 15px;
+  }
+
+  .about-image-section {
+    display: none;
+  }
+
+  /*
+  end of about section
+  */
+
+  /*
+  resume section
+  */
+  #resume-row {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #resume-section-icon {
+    height: 100px;
+    margin-right: 30px;
+  }
+
+  .resume-section-text {
+    display: none;
+  }
+
+  .resume-section-header {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  /*
+  end of resume section
+  */
+
+  /*
+  projects section
+  */
+
+  #projects-section-icon {
+    height: 58px;
+  }
+
+  /*
+  end of projects section
+  */
+
+  /*
+  contact section
+  */
+
+  .contact-section-icon {
+    height: 60px;
+    width: 55px;
+  }
+
+  #linkedin-icon {
+    width: 55px;
+  }
+
+  .contact-info {
+    margin-bottom: 70px;
+  }
+
+  #contact-section h1 {
+    text-align: left;
+  }
+
+  /*
+  end of contact section
+  */
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .sticky-nav a {
+    margin-right: 38px;
+  }
+
+  #projects-section h1 {
+    font-size: 34px;
+  }
+
 }
