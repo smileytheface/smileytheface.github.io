@@ -578,4 +578,12 @@ media queries
     font-size: 34px;
   }
 
+  #contact-section a {
+    font-size: 15px;
+  }
+
+  #contact-section img {
+    width: 48px;  
+  }
+
 }

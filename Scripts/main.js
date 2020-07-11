@@ -42,6 +42,7 @@ function hoverEffect(items, pos) {
 }
 
 function fixedNav() {
+  //if user scrolls past beginning splash page, activate navigation that sticks to top
   if (window.scrollY >= aboutTop - 70) {
     document.body.style.paddingTop = nav.offsetHeight;
     document.body.classList.add('fixed-nav');
@@ -49,7 +50,20 @@ function fixedNav() {
     document.body.classList.remove('fixed-nav');
   }
 
-  if (window.scrollY >= aboutTop - 70 && window.scrollY < resumeTop - 21) {
+  //detecting what section user is scrolled to
+  //if user scrolls into contact section or bottom of page
+  if ((window.scrollY >= contactSectionTop - 22) ||
+    ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 20)) {
+    console.log("bottom of page");
+    for (i = 0; i < stickyNav.length; i++) {
+      if (i != 3) {
+        stickyNav[i].style.opacity = '0.3';
+      } else {
+        stickyNav[i].style.opacity = '1';
+      }
+    }
+    //next detect if user scrolls into about section
+  } else if (window.scrollY >= aboutTop - 70 && window.scrollY < resumeTop - 21) {
     for (i = 0; i < stickyNav.length; i++) {
       if (i != 0) {
         stickyNav[i].style.opacity = '0.3';
@@ -57,6 +71,7 @@ function fixedNav() {
         stickyNav[i].style.opacity = '1';
       }
     }
+    //next detect if user scrolls into resume section
   } else if (window.scrollY >= resumeTop - 21 && window.scrollY < projectsSectionTop - 21) {
     for (i = 0; i < stickyNav.length; i++) {
       if (i != 1) {
@@ -65,6 +80,7 @@ function fixedNav() {
         stickyNav[i].style.opacity = '1';
       }
     }
+    //next detect if user scrolls into projects section
   } else if (window.scrollY >= projectsSectionTop - 21 && window.scrollY < contactSectionTop - 21) {
     for (i = 0; i < stickyNav.length; i++) {
       if (i != 2) {
@@ -73,7 +89,8 @@ function fixedNav() {
         stickyNav[i].style.opacity = '1';
       }
     }
-  } else if (window.scrollY >= window.height)
+  }
 }
+
 
 window.addEventListener('scroll', fixedNav);
