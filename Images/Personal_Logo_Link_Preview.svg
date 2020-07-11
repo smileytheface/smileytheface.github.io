@@ -44,7 +44,8 @@
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:object-paths="true"
-     units="px" />
+     units="px"
+     inkscape:snap-page="true" />
   <metadata
      id="metadata310">
     <rdf:RDF>
@@ -62,6 +63,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-48.769803,-20.248626)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97142855;paint-order:fill markers stroke"
+       id="rect858"
+       width="317.5"
+       height="166.6875"
+       x="48.769802"
+       y="20.248627" />
     <g
        id="g856">
       <path
