@@ -22,6 +22,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet">
 	<!-- form control taken from https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K58E2NZHF4"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-K58E2NZHF4');
+	</script>
 </head>
 
 <body class="body">
@@ -124,6 +133,29 @@
 	<div id="projects-section">
 		<h1><img src="Images/Icons/projects.svg" alt="projects_icon" id="projects-section-icon">PROJECTS</h1>
 		<div class="row h-100" id="projects-row">
+			<!-- Address Dispenser -->
+			<div class="col-md-5">
+				<div class="project-head">
+					<img src="Images\Project_Images\Address_Dispenser.svg" alt="Address Dispenser Logo"
+						class="project-image">
+					<div class="project-title">
+						<div class="project-name">Address Dispenser</div>
+						<div class="project-tools">Angular <span class="erect">|</span> Node.js <br> Express.js <span class="erect">|</span> MongoDB</div>
+					</div>
+				</div>
+				<div class="project-info">
+					Address Dispenser is a full stack web application for dispensing addresses to letter writers during the pandemic with full CRUD functionality. It uses
+					 a third party api to text/email addresses to writers, and keeps track of which writers have which addresses assigned to them. It is currently in progress, 
+					 but you can watch a sample of it on youtube, and/or view the angular code on github.
+				</div>
+				<div class="project-footer">
+					<a href="https://github.com/smileytheface/address-dispenser" target="_blank"><img
+							src="Images\Icons\github.svg" alt="GitHub Logo"></a>
+					<a href="https://youtu.be/tJUtJX4ibRY" target="_blank"><img
+							src="Images\Icons\youtube.svg" alt="YouTube Logo"></a>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
 			<!-- Sorting Animated -->
 			<div class="col-md-5">
 				<div class="project-head">
@@ -145,7 +177,8 @@
 							src="Images\Icons\youtube.svg" alt="YouTube Logo"></a>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+		</div>
+		<div class="row h-100" id="projects-row">
 			<!-- Report Generator -->
 			<div class="col-md-5">
 				<div class="project-head">
@@ -168,8 +201,7 @@
 							alt="YouTube Logo"></a>
 				</div>
 			</div>
-		</div>
-		<div class="row h-100" id="projects-row">
+			<div class="col-md-2"></div>
 			<!-- Simon Says -->
 			<div class="col-md-5">
 				<div class="project-head">
@@ -190,7 +222,8 @@
 							src="Images\CodePen.png" alt="Codepen Logo"></a>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+		</div>
+		<div class="row h-100" id="projects-row">
 			<div class="col-md-5">
 				<!-- Classic Hardwood Floors -->
 				<div class="project-head">
@@ -210,6 +243,7 @@
 					</a>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
