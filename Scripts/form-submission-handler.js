@@ -1,3 +1,5 @@
+let spamDetected = false;
+
 (function() {
   // get all data in form and return object
   function getFormData(form) {
@@ -22,11 +24,23 @@
     });
 
     var formData = {};
-    fields.forEach(function(name){
-      var element = elements[name];
+    // Adding form values to formData
+    fields.forEach(function(nameProperty){
+      var element = elements[nameProperty];
 
-      // singular form elements just have one value
-      formData[name] = element.value;
+      // Renamed fields for catching spam bots
+      if (element.name === "name") {
+        formData.email = element.value;
+      } else if (element.name === "email") {
+        formData.name = element.value
+      } else if (element.name === "token") {
+        const bytes = CryptoJS.AES.decrypt(timeTrap.value, "stopspammingmeplease");
+        const timeTrapDate = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+        formData.timetrap = timeTrapDate;
+      } else {
+        // singular form elements just have one value
+        formData[nameProperty] = element.value;
+      }
 
       // when our element has multiple items, get their values
       if (element.length) {
@@ -37,7 +51,7 @@
             data.push(item.value);
           }
         }
-        formData[name] = data.join(', ');
+        formData[nameProperty] = data.join(', ');
       }
     });
 
@@ -55,10 +69,24 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-
+    const loading = document.getElementById('loading');
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
+      spamDetected = true;
+      disableAllButtons(form);
       return false;
+    }
+
+    const minimumTime = 6000;
+    // If it takes shorter than the minimum time to fill out the form, assume it was filled by a spam bot.
+    if (Math.abs(new Date() - new Date(data.timetrap)) < minimumTime) {
+      spamDetected = true;
+      const spamDetectionMessage = document.getElementById('spam-detection-message');
+      spamDetectionMessage.style.display = "block";
+      disableAllButtons(form);
+      return false;
+    } else {
+      delete data.timeTrap;
     }
 
     disableAllButtons(form);
@@ -70,6 +98,7 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
+          loading.style.display = "none";
           var formElements = form.querySelector(".form-elements")
           if (formElements) {
             formElements.style.display = "none"; // hide form
@@ -84,7 +113,12 @@
     var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
-    xhr.send(encoded);
+
+    
+    if (!spamDetected) {      
+      xhr.send(encoded);
+      loading.style.display = "block";
+    }
   }
 
   function loaded() {

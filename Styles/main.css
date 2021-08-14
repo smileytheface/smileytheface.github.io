@@ -325,7 +325,7 @@ Contact section
 }
 
 #honeypot {
-  display: none;
+  /* display: none; */
 }
 
 #name, #email, #message {

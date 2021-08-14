@@ -266,27 +266,36 @@
 				<br>
 				<form class="gform needs-validation" method="POST"
 					action="https://script.google.com/macros/s/AKfycbwmP8u99jbLyu4Iy43cbh47c_kYpUrkScOpmrBDy8w3OhM35AY/exec">
+					<!-- Gave email and name fields different names/ids to catch spam bots -->
 					<div class="form-group">
-						<input type="text" class="form-control text-right" placeholder="Name" name="name" id="name"
+						<input type="text" class="form-control text-right" placeholder="Name" name="email" id="email"
 							required>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control text-right" placeholder="Email" name="email" id="email"
-							required>
+						<input type="email" class="form-control text-right" placeholder="Email" name="name" id="name" required>
 					</div>
 					<div class="form-group">
 						<textarea class="form-control text-right" rows="5" placeholder="Comments" name="message"
 							id="message" required></textarea>
 					</div>
 					<div class="form-group">
-						<input id="honeypot" type="text" name="honeypot" value="" />
+						<input id="honeypot" type="text" name="honeypot" value="" style="display: none;"/>
+					</div>
+					<div class="form-group">
+						<input id="token" type="text" name="token" value="" style="display: none;" />
 					</div>
 
-					<button class="btn float-right">
+					<button class="btn float-right" id="form-button">
 						<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send
 					</button>
+					<div id="loading" style="display: none;">
+						<p>Loading...</p>
+					</div>
 					<div class="thankyou_message" style="display:none">
 						<p id="thankyou-message">Thanks for reaching out! I'll get back to you soon!</p>
+					</div>
+					<div id="spam-detection-message" style="display:none">
+						<p>Aborting due to spam detection. Please reload and try again or email me directly.</p>
 					</div>
 				</form>
 			</div>
@@ -305,10 +314,12 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Script for Encrypting -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
 	<!-- Submit the Form to Google Using "AJAX" -->
 	<!-- taken from https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how -->
 	<script data-cfasync="false" type="text/javascript" src="Scripts/form-submission-handler.js"></script>
-	<script type="text/javascript" src="Scripts/validation.js"></script>
+	<!-- <script type="text/javascript" src="Scripts/validation.js"></script> -->
 </body>
 <!-- My own script -->
 <script src="Scripts/main.js"></script>

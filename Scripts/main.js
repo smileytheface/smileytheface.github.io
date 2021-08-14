@@ -5,6 +5,7 @@ const stickyNav = document.getElementsByClassName('sticky-nav-item');
 const nav = document.getElementsByClassName('sticky-nav')[0];
 const topSection = document.querySelector('#top');
 const bottomOfTop = topSection.offsetHeight;
+const timeTrap = document.getElementById('token');
 
 const aboutSection = document.querySelector('#about-section');
 const resumeSection = document.querySelector('#resume-section');
@@ -14,8 +15,6 @@ const aboutTop = aboutSection.offsetTop;
 const resumeTop = resumeSection.offsetTop;
 const projectsSectionTop = projectsSection.offsetTop;
 const contactSectionTop = contactSection.offsetTop;
-
-console.log(aboutTop);
 
 for (i = 0; i < navItems.length; i++) {
   hoverEffect(navItems, i);
@@ -54,7 +53,6 @@ function fixedNav() {
   //if user scrolls into contact section or bottom of page
   if ((window.scrollY >= contactSectionTop - 22) ||
     ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 20)) {
-    console.log("bottom of page");
     for (i = 0; i < stickyNav.length; i++) {
       if (i != 3) {
         stickyNav[i].style.opacity = '0.3';
@@ -92,5 +90,11 @@ function fixedNav() {
   }
 }
 
+function createTimeTrap() {
+  timeTrap.value = CryptoJS.AES.encrypt(JSON.stringify(new Date()), "stopspammingmeplease");
+}
 
 window.addEventListener('scroll', fixedNav);
+window.onload = function() {
+  createTimeTrap();
+}
