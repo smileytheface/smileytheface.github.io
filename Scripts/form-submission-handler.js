@@ -1,5 +1,5 @@
 let spamDetected = false;
-
+/*
 (function() {
   // get all data in form and return object
   function getFormData(form) {
@@ -137,3 +137,4 @@ let spamDetected = false;
     }
   }
 })();
+*/
